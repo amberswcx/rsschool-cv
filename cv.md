@@ -2,6 +2,8 @@
 
 ## Front-End Junior Web Developer
 
+![Pavel Orlov](photos/my-photo.jpg)
+
 - - -
 
 ### WORK EXPERIENCE
@@ -39,3 +41,30 @@ and combine work and study. I want to work in front-end or back-end development 
 
 * Russian (native)
 * English A2
+
+### EXAMPLES OF MY CODE
+
+```javascript
+/*
+  given array included sheeps as true
+  find number of sheeps  
+*/
+
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter(Boolean).length;
+}
+```
+
+```javascript
+/*
+    if xCount can be converted to true ('x' found),
+    returns xCount.length; else, returns xCount (null)
+*/
+
+
+function XO(str) {
+  const xCount = str.match(/[x]/gi);
+  const oCount = str.match(/[o]/gi);
+  return (xCount && xCount.length) === (oCount && oCount.length);
+}
+```
