@@ -160,38 +160,42 @@
           <li class="language-list__item">English - A2</li>
         </ul>
       </section>
-    </div>
-  </section>
-</main>
+      <section class="examples-of-my-code" id="examples-of-my-code">
+        <h2 class="title title_underline">Examples of my code</h2>
+        <pre class="code-example">
+          <code>
 
-
-
-
-### EXAMPLES OF MY CODE
-
-```javascript
 /*
-given array included sheeps as true
-find number of sheeps
+  # Counting sheep...
+  Consider an array/list of sheep where some sheep may be missing from their place.
+  We need a function that counts the number of sheep present in the array (true means present).
 */
 
 function countSheeps(arrayOfSheep) {
-return arrayOfSheep.filter(Boolean).length;
+  return arrayOfSheep.filter(Boolean).length;
 }
-```
 
-```javascript
+          </code>
+        </pre>
+        <pre class="code-example">
+          <code>
 /*
-if xCount can be converted to true ('x' found),
-returns xCount.length; else, returns xCount (null)
+  # Exes and Ohs
+  Check to see if a string has the same amount of 'x's and 'o's.
+  The method must return a boolean and be case insensitive.
+  The string can contain any char.
 */
 
-
 function XO(str) {
-const xCount = str.match(/[x]/gi);
-const oCount = str.match(/[o]/gi);
-return (xCount && xCount.length) === (oCount && oCount.length);
+  const xCount = str.match(/[x]/gi);
+  const oCount = str.match(/[o]/gi);
+  return (xCount && xCount.length) === (oCount && oCount.length);
 }
-```
+          </code>
+        </pre>
+      </section>
+    </div>
+  </section>
+</main>
 </body>
 </html>
