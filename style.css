@@ -76,6 +76,25 @@ body {
   margin-right: 30px;
 }
 
+.column-avatar {
+  text-align: center;
+}
+
+.avatar {
+  position: relative;
+  z-index: 1;
+  top: 70px;
+  width: 65%;
+  border: 15px solid #ffffff;
+  filter: grayscale(1) contrast(1.1);
+  transition-duration: 0.5s;
+  transition-property: filter;
+}
+
+.avatar:hover {
+  filter: none;
+}
+
 .page-footer {
   justify-content: center;
 }
@@ -88,4 +107,22 @@ body {
 .column-right {
   width: 60%;
   order: 2;
+}
+
+.column_dark {
+  background: #000000;
+}
+
+.column_dark,
+.column_dark a {
+  color: #ffffff;
+}
+
+.column_light {
+  background: #ffffff;
+}
+
+.column_light,
+.column_light a {
+  color: #000000;
 }
