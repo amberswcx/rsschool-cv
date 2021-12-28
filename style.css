@@ -1,3 +1,44 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-nav,
+.greeting,
+.cv-content,
+.page-links {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.column-left {
+  width: 40%;
+  order: 1;
+}
+
+.column-right {
+  width: 60%;
+  order: 2;
 }
