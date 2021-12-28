@@ -128,14 +128,16 @@ body {
 
 .column-avatar {
   text-align: center;
+  position: relative;
 }
 
 .avatar {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: 70px;
+  left: 15%;
+
   width: 65%;
-  border: 15px solid #ffffff;
+  border: 15px solid #eeeeee;
   filter: grayscale(1) contrast(1.1);
   transition-duration: 0.5s;
   transition-property: filter;
@@ -143,6 +145,10 @@ body {
 
 .avatar:hover {
   filter: none;
+}
+
+.promo-text {
+  margin-bottom: 30px;
 }
 
 .page-footer {
