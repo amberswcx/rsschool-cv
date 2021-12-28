@@ -9,6 +9,56 @@ body {
   font-weight: 300;
 }
 
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.title_main {
+  font-size: 5rem;
+}
+
+.title_underline,
+.text_overline {
+  position: relative;
+}
+
+.title_underline {
+  margin-bottom: 40px;
+}
+
+.text_overline {
+  margin-top: 50px;
+}
+
+.title_underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 70%;
+  height: 2px;
+}
+
+.column_light .title_underline::after {
+  background: #000000;
+}
+
+.column_dark .title_underline::after {
+  background: #ffffff;
+}
+
+.text_overline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 90%;
+  height: 1px;
+  background: #ffffff;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,6 +157,8 @@ body {
 .column-right {
   width: 60%;
   order: 2;
+  box-sizing: border-box;
+  padding: 0 60px;
 }
 
 .column_dark {
