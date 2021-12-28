@@ -5,6 +5,8 @@ html {
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .visually-hidden {
@@ -23,14 +25,59 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
-.page-nav,
+.page-header,
 .greeting,
 .cv-content,
-.page-links {
+.page-footer,
+.page-nav {
   display: flex;
+
+}
+
+.page-header,
+.greeting,
+.cv-content,
+.page-footer {
   flex-flow: row nowrap;
+}
+
+.page-nav {
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.page-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+  cursor: pointer;
+  background: url("img/logo.svg") no-repeat center;
+  background-size: 80%;
+  transform: rotate(-5deg);
+  width: 240px;
+  height: 45px;
+}
+
+.page-nav {
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 -30px 0 30px;
+}
+
+.page-nav__item {
+  padding: 15px 0;
+  margin-right: 30px;
+}
+
+.page-footer {
+  justify-content: center;
 }
 
 .column-left {
