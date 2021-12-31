@@ -205,6 +205,29 @@ body {
   margin: 5px 0 40px;
 }
 
+.experience-text {
+  margin-bottom: 40px;
+}
+
+.skill-list {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.skill-list__item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-list__value {
+  width: 70%;
+}
+
 .page-footer {
   justify-content: center;
 }
