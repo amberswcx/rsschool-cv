@@ -228,6 +228,25 @@ body {
   width: 70%;
 }
 
+.language-list {
+  margin-bottom: 40px;
+  list-style: square;
+}
+
+.language-list__item {
+  margin-bottom: 5px;
+}
+
+.code-example {
+  overflow: scroll;
+  background: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.examples-of-my-code {
+  margin-bottom: 40px;
+}
+
 .page-footer {
   justify-content: center;
 }
