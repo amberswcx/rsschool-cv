@@ -173,6 +173,38 @@ body {
   top: 0;
 }
 
+.education_list {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin-bottom: -10px;
+  list-style: none;
+}
+
+.education_list__item {
+  margin-bottom: 10px;
+}
+
+.education-story {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.education_list__title {
+  margin: 10px 0 5px 0;
+  order: 2;
+}
+
+.education_list__period {
+  order: 1;
+  color: #999999;
+}
+
+.education_list__description {
+  order: 3;
+  margin: 5px 0 40px;
+}
+
 .page-footer {
   justify-content: center;
 }
