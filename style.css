@@ -281,6 +281,41 @@ a:hover {
   margin-bottom: 40px;
 }
 
+.two-columns {
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  column-gap: 4%;
+  row-gap: 20px;
+  list-style: none;
+}
+
+.two-columns__item {
+  width: 48%;
+  text-align: center;
+  filter: grayscale(1) contrast(1.1);
+  transition-duration: 0.5s;
+  transition-property: filter;
+}
+
+.two-columns__item:hover {
+  filter: none;
+}
+
+.two-columns__item a {
+  text-decoration: none;
+}
+
+.two-columns__item a:hover {
+  text-decoration: underline;
+}
+
+.two-columns__img {
+  width: 100%;
+}
+
+
 .page-footer {
   justify-content: center;
   align-items: center;
